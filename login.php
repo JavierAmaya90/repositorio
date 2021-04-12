@@ -1,4 +1,5 @@
 <?php
+<<<<<<< HEAD
 
 include 'Usuarios.php';
 
@@ -21,6 +22,10 @@ if(isset($_SESSION['nivel'])){
 }
 
 
+=======
+session_start();
+include 'Usuarios.php';
+>>>>>>> b130c3560b9e0775a3ca5ecccf4faf37b929edd2
 $objUsuario = new Usuarios();
 ?>
 <!DOCTYPE html>
