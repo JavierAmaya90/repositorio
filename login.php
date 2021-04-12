@@ -20,9 +20,6 @@ if(isset($_SESSION['nivel'])){
         default:    }
 }
 
-session_start();
-include 'Usuarios.php';
-$objUsuario = new Usuarios();
 ?>
 
 <!DOCTYPE html>
@@ -34,12 +31,13 @@ $objUsuario = new Usuarios();
     <title>Document</title>
 </head>
 <body>
+<center>
 <h4>Login</h4> <hr>
 
 
 <br>
 
-<center>
+
 <div class="form-control" style="width:500px;">
     <fieldset>
     <legend>Formulario</legend>
@@ -60,10 +58,6 @@ if($_POST){
     $usuario = $_REQUEST["txtUsuario"];
     $contra = $_REQUEST["txtPass"];
 
-    $objUsuario->setNombreuser($usuario);
-    $objUsuario->setPass($contra);
-
-    $nivel = $objUsuario->validar();
 
 
     if($nivel != ""){
