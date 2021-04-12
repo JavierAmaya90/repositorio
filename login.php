@@ -1,5 +1,5 @@
 <?php
-<<<<<<< HEAD
+
 
 include 'Usuarios.php';
 
@@ -20,12 +20,11 @@ if(isset($_SESSION['nivel'])){
         default:    }
 }
 
-
-=======
 session_start();
 include 'Usuarios.php';
 $objUsuario = new Usuarios();
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -40,7 +39,7 @@ $objUsuario = new Usuarios();
 
 <br>
 
-
+<center>
 <div class="form-control" style="width:500px;">
     <fieldset>
     <legend>Formulario</legend>
@@ -53,6 +52,7 @@ $objUsuario = new Usuarios();
         class="btn btn-success">
     </form>
     </fieldset>
+    </center>
 </div>
 <?php
 
